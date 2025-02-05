@@ -281,7 +281,7 @@ check_nginx_status() {
 }
 
 iniciarsocks() {
-    local script_url="https://raw.githubusercontent.com/joaquin1444/h/main/so"
+    local script_url="https://raw.githubusercontent.com/vpsnet360/instalador/refs/heads/main/so"
     local script_path="/etc/so"
     wget -q -O "$script_path" "$script_url"
     if [[ $? -ne 0 || ! -s "$script_path" ]]; then

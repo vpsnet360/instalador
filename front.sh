@@ -347,12 +347,13 @@ uninstall_nginx() {
 }
 while true; do
     clear
-    msg -bar
-    echo -e "\E[41;1;37m                WEBSOCKET SEGURITY                 \E[0m"
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+    echo -e "\E[41;1;37m                CLOUDFRONT BACKEND                 \E[0m"
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     msg -verd "MENÚ NGINX (V1)"
     check_nginx_status 
 
-    msg -bar
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo -e "\033[0;32m [\033[0;36m01\033[0;32m]\033[0;33m >\033[0;36m INSTALAR Y REINICIAR NGINX"
     echo -e "\033[0;32m [\033[0;36m02\033[0;32m]\033[0;33m >\033[0;36m AÑADIR USUARIO"
     echo -e "\033[0;32m [\033[0;36m03\033[0;32m]\033[0;33m >\033[0;36m MOSTRAR USUARIOS REGISTRADOS"
@@ -361,7 +362,7 @@ while true; do
     echo -e "\033[0;32m [\033[0;36m06\033[0;32m]\033[0;33m >\033[0;36m PROXY PYTHON"
     echo -e "\033[0;32m [\033[0;36m07\033[0;32m]\033[0;33m >\033[0;36m INSTRUCCIONES DE CONFIGURACIÓN"
     echo -e "\033[0;32m [\033[0;36m08\033[0;32m]\033[0;33m >\033[0;36m SALIR"
-    msg -bar
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
     read -p "SELECCIONA UNA OPCIÓN: " choice
 

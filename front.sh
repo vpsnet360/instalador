@@ -348,6 +348,7 @@ uninstall_nginx() {
 while true; do
     clear
     msg -bar
+    echo -e "\E[41;1;37m                WEBSOCKET SEGURITY                 \E[0m"
     msg -verd "MENÚ NGINX (V1)"
     check_nginx_status 
 

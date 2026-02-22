@@ -108,9 +108,9 @@ http {
         access_log off;
 
         # Configurações de timeout para proxy
-        proxy_connect_timeout 5s;
-        proxy_send_timeout 10s;
-        proxy_read_timeout 10s;
+        proxy_connect_timeout 86400s;
+        proxy_send_timeout 86400s;
+        proxy_read_timeout 86400s;
 
         location / {
             # Passa a requisição para o backend mapeado

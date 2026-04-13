@@ -1638,7 +1638,7 @@ pidproxy3=$(echo -e "$_ps" | grep "PDirect" | grep -v "grep" | awk -F "pts" '{pr
 pidproxy4=$(echo -e "$_ps" | grep -w  "POpen.py" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy4 ]] && P4="\033[1;32m[ON]" || P4="\033[1;31m[OFF]"
 pidproxy5=$(echo -e "$_ps" | grep "PGet.py" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy5 ]] && P5="\033[1;32m[ON]" || P5="\033[1;31m[OFF]"
 pidproxy6=$(echo -e "$_ps" | grep "scktcheck" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy6 ]] && P6="\033[1;32m[ON]" || P6="\033[1;31m[OFF]"
-echo -e "\e[91m\e[44m   ====  SCRIPT MOD joaquinH2|EDICION  ====  [MOD-V6]  \033[0m \033[0;33m"
+echo -e "\e[91m\e[44m   ====  SCRIPT PHYTON  ====  [MOD-V6]  \033[0m \033[0;33m"
 
 [[ ${_PT} ]] && {
 msg -bar3
